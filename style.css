@@ -1,0 +1,143 @@
+.body {
+  margin: 0px;
+}
+.main-block {
+  color: beige;
+  width: 670px;
+  height: 670px;
+  margin: 30px auto;
+  outline: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgb(144, 122, 66);
+  background: linear-gradient(
+    90deg,
+    rgba(144, 122, 66, 1) 0%,
+    rgba(105, 79, 49, 1) 31%,
+    rgba(149, 64, 17, 1) 69%,
+    rgba(135, 92, 19, 1) 100%
+  );
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.board {
+  width: 560px;
+  height: 560px;
+}
+
+.block {
+  width: 70px;
+  height: 70px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black {
+  background: #ba7a3a;
+}
+
+.white {
+  background: rgb(235, 217, 180);
+}
+
+.square-titles-vertical {
+  width: 50px;
+  height: 560px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.square-titles-horizontal {
+  width: 560px;
+  height: 50px;
+  display: flex;
+}
+
+.square-letter,
+.square-number {
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.square-letter {
+  width: 70px;
+  height: 50px;
+}
+
+.square-number {
+  width: 50px;
+  height: 70px;
+}
+
+.checker {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.black-checker {
+  background: rgb(13, 4, 1);
+  background: radial-gradient(
+    circle,
+    rgba(13, 4, 1, 1) 30%,
+    rgba(141, 105, 235, 1) 100%
+  );
+}
+
+.white-checker {
+  background: rgb(229, 229, 236);
+  background: radial-gradient(
+    circle,
+    rgba(229, 229, 236, 1) 50%,
+    rgba(251, 63, 248, 1) 100%
+  );
+}
+
+.black-queen {
+  background: rgb(237, 250, 18);
+  background: radial-gradient(
+    circle,
+    rgba(237, 250, 18, 1) 15%,
+    rgba(13, 4, 1, 1) 22%,
+    rgba(13, 4, 1, 1) 30%,
+    rgba(141, 105, 235, 1) 100%
+  );
+}
+.white-queen {
+  background: rgb(255, 34, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 34, 0, 1) 13%,
+    rgba(229, 229, 236, 1) 25%,
+    rgba(229, 229, 236, 1) 50%,
+    rgba(251, 63, 248, 1) 100%
+  );
+}
+.player-turn.white-checker:hover,
+.player-turn.black-checker:hover {
+  filter: drop-shadow(0 0 5px rgba(218, 31, 31, 0.8));
+  outline: 3px solid red;
+  cursor: pointer;
+}
+
+.active-block {
+  border: 3px solid yellow;
+}
+.player-turn {
+  outline: 3px solid rgb(0, 255, 234);
+}
+.active-checker {
+  filter: drop-shadow(0 0 5px rgba(218, 31, 31, 0.8));
+  outline: 3px solid red;
+}
